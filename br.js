@@ -8,9 +8,13 @@ var autoModeratorModel = require('app/base/Class').extend({
 		'huehuehue',
 		'hu3hu3hu3',
 		'brbrbr',
-    'fuck',
-    'shit',
-    'skip this'
+                'fuck',
+                'shit',
+                'skip this',
+                'BR BR BR',
+                'BR BR',
+                'HUE HUE HUE'
+               
 	],
 	mutedUsers: [],
 	init: function() {
@@ -21,7 +25,7 @@ var autoModeratorModel = require('app/base/Class').extend({
 		API.on(API.CHAT,          this.proxy.chat);
 		API.on(API.CHAT_COMMAND,  this.proxy.chatCommand);
 		console.log('AutoModerator version ' + this.version + ' now running!')
-		API.sendChat('AutoModerator version ' + this.version + ' now running!')
+		API.sendChat('Project Cupdake ' + this.version + ' now running!')
 	},
 	close: function() {
 		API.off(API.CHAT,          this.proxy.onChat);
