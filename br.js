@@ -3,13 +3,13 @@ if (autoModerator !== undefined)
 
 String.prototype.equalsIgnoreCase     = function(other)    { return typeof other !== 'string' ? false : this.toLowerCase() === other.toLowerCase(); };
 var autoModeratorModel = require('app/base/Class').extend({
-	version: "1.0.3",
+	version: "1.0.0",
 	bannedWords: [
 		'huehuehue',
 		'hu3hu3hu3',
 		'brbrbr',
-                'fuck',
-                'shit',
+                'FUCK AMBASSADORS',
+                'HEU HEU HEU',
                 'skip this',
                 'BR BR BR',
                 'BR BR',
@@ -25,7 +25,7 @@ var autoModeratorModel = require('app/base/Class').extend({
 		API.on(API.CHAT,          this.proxy.chat);
 		API.on(API.CHAT_COMMAND,  this.proxy.chatCommand);
 		console.log('AutoModerator version ' + this.version + ' now running!')
-		API.sendChat('Project Cupdake ' + this.version + ' now running!')
+		API.sendChat('Project Cupcake ' + this.version + ' Initiated!')
 	},
 	close: function() {
 		API.off(API.CHAT,          this.proxy.onChat);
